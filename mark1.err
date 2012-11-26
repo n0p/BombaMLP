@@ -1,0 +1,8 @@
+>>> Warning 225 "C:\ARCHIV~1\PICC\drivers\lcd.c" Line 70(17,57): Duplicate #define
+>>> Warning 203 "mark1.c" Line 43(1,1): Condition always TRUE
+>>> Warning 203 "mark1.c" Line 58(1,1): Condition always TRUE
+>>> Warning 203 "mark1.c" Line 103(1,1): Condition always TRUE
+>>> Warning 202 "mark1.c" Line 14(6,12): Variable never used:   cuenta
+>>> Warning 202 "mark1.c" Line 70(5,13): Variable never used:   segundos
+      Memory usage:   ROM=10%      RAM=8% - 12%
+      0 Errors,  6 Warnings.

@@ -1,0 +1,99 @@
+004     @WRITE_PROGRAM_MEMORY8.P1
+004-005 @READ_PROGRAM_MEMORY8.P2
+008     lcd
+008     PSP_DATA
+015     CCP_1_LOW
+015-016 CCP_1
+016     CCP_1_HIGH
+01B-01C CCP_2
+01B     CCP_2_LOW
+01C     CCP_2_HIGH
+020-021 strtok.save
+022-023 cuentas
+024-035 cuenta
+036     @TRIS_C
+037     segundos
+038     lcd_init.i
+038     MAIN.@SCRATCH
+038     armar.@SCRATCH
+038     detona.@SCRATCH
+039     lcd_init.@SCRATCH
+039     armar.@SCRATCH
+03A-03B @DIV1616.P1
+03A     armar.@SCRATCH
+03B     lcd_putc.c
+03C     @delay_ms1.P1
+03C     lcd_gotoxy.x
+03C-03D @DIV1616.P1
+03D     lcd_gotoxy.y
+03E     lcd_gotoxy.address
+03E     @DIV1616.@SCRATCH
+03F     lcd_gotoxy.@SCRATCH
+040     lcd_send_byte.address
+041     lcd_send_byte.n
+042     lcd_read_byte.low
+042     lcd_send_byte.@SCRATCH
+043     lcd_read_byte.high
+043     lcd_send_nibble.n
+044     lcd_read_byte.@SCRATCH
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+07B     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+0094  @delay_ms1
+0004  LCD_INIT_STRING
+00B8  lcd_read_byte
+00A8  lcd_send_nibble
+00B7  lcd_send_byte
+00F3  lcd_init
+011F  lcd_gotoxy
+0131  lcd_putc
+029B  MAIN
+000C  @const187
+0029  @const188
+017B  armar
+0047  @const190
+0156  @DIV1616
+005D  @const194
+0263  detona
+0063  @const195
+0069  @const196
+007F  @const197
+029B  @cinit
+
+Project Files:
+    mark1.c
+    mark1.h
+    C:\ARCHIV~1\PICC\devices\16F877A.h
+    C:\ARCHIV~1\PICC\drivers\lcd.c
+    C:\ARCHIV~1\PICC\drivers\string.h
+    C:\ARCHIV~1\PICC\drivers\stddef.h
+    C:\ARCHIV~1\PICC\drivers\ctype.h
+
+Units:
+    D:\My Dropbox\bomba MLP\mark1.c (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-255
+    Opt Level:      0
+    Short,Int,Long: 1,8,16
+
+Output Files:
+    Errors:      D:\My Dropbox\bomba MLP\mark1.err
+    Ext Symbols: D:\My Dropbox\bomba MLP\mark1.esym
+    INHX8:       D:\My Dropbox\bomba MLP\mark1.hex
+    Symbols:     D:\My Dropbox\bomba MLP\mark1.sym
+    List:        D:\My Dropbox\bomba MLP\mark1.lst
+    Debug/COFF:  D:\My Dropbox\bomba MLP\mark1.cof
+    Project:     D:\My Dropbox\bomba MLP\mark1.PJT
+    Call Tree:   mark1.tre
+    Statistics:  mark1.sta
